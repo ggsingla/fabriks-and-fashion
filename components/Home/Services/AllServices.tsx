@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import { Service } from '../../common/NavBar'
 import { useEffect, useState } from 'react'
