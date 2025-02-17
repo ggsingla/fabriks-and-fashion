@@ -6,7 +6,7 @@ import { Interweave } from 'interweave'
 type data = Service[]
 
 export default function ServicePage({ data }: { data: data }) {
-  console.log(data)
+
   return (
     <>
       <div className='space-y-16 container mx-auto px-4 py-10'>
