@@ -1,9 +1,10 @@
+'use client'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { getClient } from '@/lib/sanity'
 import { groq } from 'next-sanity'
 import { slugify } from '@/lib/utils'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 
 const navLinksQuery = groq`
   *[_type == "service"] {
