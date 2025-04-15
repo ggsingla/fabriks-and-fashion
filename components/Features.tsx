@@ -2,34 +2,34 @@ import Image from 'next/image'
 
 const features = [
   {
-    title: 'Unparalleled Craftsmanship',
+    title: 'Bespoke Design Excellence',
     description:
-      'Our skilled artisans blend traditional techniques with modern design to create exceptional garments with meticulous attention to detail.',
+      'Each creation is meticulously crafted to reflect your unique style, combining traditional artistry with contemporary vision for truly distinctive pieces.',
   },
   {
-    title: 'Bespoke Tailoring',
+    title: 'Timeless Craftsmanship',
     description:
-      'Each garment is meticulously crafted to your measurements, preferences, and specifications for a perfect fit that reflects your individuality.',
+      'Our master artisans employ time-honored techniques to create garments of exceptional quality that transcend seasonal trends.',
   },
   {
-    title: 'Luxury Fabrics',
+    title: 'Luxury Fabric Selection',
     description:
-      'We source the finest fabrics worldwide, ensuring your garments not only look exceptional but also stand the test of time.',
+      'We curate the finest materials from around the world, ensuring each piece embodies both comfort and enduring elegance.',
   },
   {
     title: 'Attention to Detail',
     description:
-      'From intricate embellishments to precise patterns, we leave no stone unturned in creating garments of impeccable quality.',
+      'Every stitch, seam, and silhouette is carefully considered to achieve perfection in both form and function.',
   },
   {
-    title: 'Customer-Centric Approach',
+    title: 'Personalized Experience',
     description:
-      'We prioritize your satisfaction through attentive service, open communication, and delivering a tailored experience that exceeds your expectations.',
+      'From initial consultation to final fitting, we provide a bespoke journey tailored to your individual style and preferences.',
   },
   {
-    title: 'One-Stop Solution',
+    title: 'Ethical Design Philosophy',
     description:
-      'From sampling to production, stitching, and finishing, we offer comprehensive services to fulfill your garment needs with expertise and reliability.',
+      'We create with purpose, combining sustainable practices with innovative design to craft pieces that honor both people and planet.',
   },
 ]
 
@@ -45,20 +45,18 @@ export default function Features() {
                 height={600}
                 width={500}
                 src='/product/production.jpg'
-                alt='Preview Feature Image'
+                alt='Fabriks & Fashion - Bespoke Design Studio'
                 className='relative mx-auto'
               />
             </div>
             <div className='lg:w-1/2 xl:w-3/5 md:py-12 space-y-10'>
               {/* Heading */}
-
               <div className='font-serif w-full'>
                 <h2 className='text-3xl text-black md:text-4xl font-semibold mb-4'>
-                  Why <span className='font-light'>Choose us?</span>
+                  The <span className='font-light'>Fabriks & Fashion</span> Difference
                 </h2>
                 <h3 className='text-lg md:leading-relaxed text-gray-600'>
-                  Discover the Benefits of Partnering with Our Full-Service
-                  Factory
+                  Experience the art of bespoke fashion through our distinctive approach to design and craftsmanship
                 </h3>
               </div>
               {/* END Heading */}

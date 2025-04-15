@@ -18,7 +18,7 @@ export default function LogoBar() {
                 <Image
                   height={200}
                   width={500}
-                  src='/company/moh-india-logo.png'
+                  src='/company/logo.svg'
                   alt='tailor and company logo'
                   className='inline-block h-36 md:h-44 object-contain'
                 />
