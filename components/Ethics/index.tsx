@@ -1,34 +1,33 @@
 const ethics = [
   {
-    title: 'No Use of Child Labor',
+    title: 'Ethical Craftsmanship',
     description:
-      'We strictly prohibit the use of child labor, bonded labor, and other exploitative practices against workers.',
+      'We uphold the highest standards of ethical craftsmanship, ensuring fair wages and safe working conditions for all our artisans and craftspeople.',
   },
   {
-    title: 'Ethical Business Conduct',
+    title: 'Sustainable Luxury',
     description:
-      'We take full responsibility and strive to meet the expectations of our employees, customers, governmental entities, and society through ethical business practices.',
+      'Our commitment to sustainability extends to every aspect of production, from sourcing eco-friendly materials to implementing responsible manufacturing processes.',
   },
   {
-    title: 'Advocating for Sustainability',
+    title: 'Transparent Practices',
     description:
-      'We embrace sustainable business practices and encourage our customers to choose sustainable fabrics and trims.',
-  },
-
-  {
-    title: 'Clear Communication',
-    description:
-      'We believe in clear, honest, and transparent communication, avoiding false promises or sugarcoated words.',
+      'We maintain complete transparency in our supply chain and business operations, building trust through honest communication with our clients and partners.',
   },
   {
-    title: 'Fair Trade Policy',
+    title: 'Artisanal Heritage',
     description:
-      'We implement fair pay, reasonable pricing, and promote gender equality within our workplace and business operations.',
+      'We preserve and promote traditional craftsmanship while supporting local artisans and their communities through fair trade practices.',
   },
   {
-    title: 'Customer-First Policy',
+    title: 'Environmental Stewardship',
     description:
-      'Our customers are of paramount importance to us. We prioritize their success and do everything possible to ensure they thrive.',
+      'We minimize our environmental impact through sustainable practices, from fabric selection to packaging, ensuring our luxury comes with a conscience.',
+  },
+  {
+    title: 'Client-Centric Excellence',
+    description:
+      'We believe in building lasting relationships with our clients, offering personalized service and maintaining the highest standards of quality in every interaction.',
   },
 ]
 
@@ -43,18 +42,13 @@ export default function Ethics() {
             <div className='lg:w-5/12 xl:w-5/12 space-y-10'>
               <div className='font-serif mb-10'>
                 <h2 className='text-3xl text-black md:text-4xl mb-4'>
-                  Our Ethics & Credentials
+                  Our Ethical Commitment
                 </h2>
                 <h3 className='text-lg md:leading-relaxed text-gray-600'>
-                  Tailor & Company is renowned for its exceptional expertise in
-                  producing premium garments at affordable prices, while also
-                  upholding the utmost level of business ethics and unmatched
-                  credentials.
+                  At Fabriks & Fashion, we believe that true luxury must be built on a foundation of ethical practices and sustainable values. Our commitment to excellence extends beyond design and craftsmanship to encompass every aspect of our business.
                 </h3>
                 <h3 className='text-lg md:leading-relaxed text-gray-600 mt-4'>
-                  We strive to establish elevated benchmarks in terms of
-                  quality, sustainability, social responsibility, and trust,
-                  akin to industry leaders.
+                  We set the standard for ethical luxury fashion, combining traditional craftsmanship with modern sustainability practices to create pieces that are as responsible as they are beautiful.
                 </h3>
               </div>
             </div>
