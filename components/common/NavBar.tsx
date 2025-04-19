@@ -1,25 +1,16 @@
 'use client'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { getClient } from '@/lib/sanity'
-import { groq } from 'next-sanity'
-import { slugify } from '@/lib/utils'
 import { useRouter } from 'next/navigation'
-
-const navLinksQuery = groq`
-  *[_type == "service"] {
-    _id,
-    title,
-  }
-`
+import { getAllServices } from '@/lib/markdown'
 
 export type Service = {
-  _id: string
   title: string
-  slug?: string
-  description?: string
-  image?: any
-  content: []
+  slug: string
+  description: string
+  image: string
+  image_alt: string
+  content: string
 }
 
 const NavBar = () => {
@@ -29,7 +20,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const getServices = async () => {
-      const services: Service[] = await getClient(false).fetch(navLinksQuery)
+      const services = await getAllServices()
       setServices(services)
     }
     getServices()
@@ -114,10 +105,10 @@ const NavBar = () => {
                       <div className='w-fit transform transition duration-500 ease-out opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100'>
                         <div className='p-4 space-y-6'>
                           <nav className='font-sans flex flex-col space-y-3'>
-                            {services?.map((service: any) => (
+                            {services?.map((service) => (
                               <Link
-                                key={service._id}
-                                href={`/services/${slugify(service.title)}`}
+                                key={service.slug}
+                                href={`/services/${service.slug}`}
                                 className='text-gray-600 hover:underline underline-offset-4 font-medium text-sm capitalize'>
                                 {service.title}
                               </Link>
@@ -128,13 +119,6 @@ const NavBar = () => {
                     </div>
                   </div>
                 </li>
-                {/* <li className='group'>
-                  <Link
-                    href='/gallery'
-                    className='font-semibold inline-flex items-center space-x-1 h-8 px-4 group-hover:underline underline-offset-4 text-black'>
-                    <span>Gallery</span>
-                  </Link>
-                </li> */}
                 <li className='group'>
                   <Link
                     href='/contact'
@@ -146,7 +130,6 @@ const NavBar = () => {
             </div>
 
             {/* Navigation on smaller screens */}
-
             <div className={`lg:hidden ${mobileNavOpen ? '' : 'hidden'}`}>
               <div className='bg-gray-50 rounded-xl mt-5'>
                 <div className='p-8 space-y-6'>
@@ -171,21 +154,16 @@ const NavBar = () => {
                       <Link href='/services'>Services</Link>
                     </h4>
                     <nav className='flex flex-col space-y-3 pl-3'>
-                      {services?.map((service: any) => (
+                      {services?.map((service) => (
                         <Link
-                          key={service._id}
-                          href={`/services/${slugify(service.title)}`}
+                          key={service.slug}
+                          href={`/services/${service.slug}`}
                           className='font-sans text-sm text-gray-600 hover:text-orange-600 font-medium capitalize'>
                           {service.title}
                         </Link>
                       ))}
                     </nav>
 
-                    {/* <Link
-                      href='/gallery'
-                      className='text-gray-600 hover:text-orange-600 font-medium text-sm'>
-                      <h4 className='font-semibold text-black'>gallery</h4>
-                    </Link> */}
                     <Link
                       href='/contact'
                       className='text-gray-600 hover:text-orange-600 font-medium text-sm'>
@@ -195,11 +173,9 @@ const NavBar = () => {
                 </div>
               </div>
             </div>
-            {/* Navigation on smaller screens */}
           </div>
         </header>
       </div>
-      {/* END Main Header Section: With Mega Menu */}
     </>
   )
 }

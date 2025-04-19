@@ -36,7 +36,6 @@ const features = [
 export default function Features() {
   return (
     <>
-      {/* Features Section: Featured Image Side */}
       <div className='overflow-hidden'>
         <div className='container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32'>
           <div className='flex flex-col lg:flex-row lg:items-center space-y-12 lg:space-y-0 lg:space-x-28'>
@@ -50,18 +49,15 @@ export default function Features() {
               />
             </div>
             <div className='lg:w-1/2 xl:w-3/5 md:py-12 space-y-10'>
-              {/* Heading */}
               <div className='font-serif w-full'>
-                <h2 className='text-3xl text-black md:text-4xl font-semibold mb-4'>
-                  The <span className='font-light'>Fabriks & Fashion</span> Difference
+                <h2 className='text-3xl text-black md:text-4xl mb-4'>
+                  The Fabriks & Fashion Difference
                 </h2>
                 <h3 className='text-lg md:leading-relaxed text-gray-600'>
                   Experience the art of bespoke fashion through our distinctive approach to design and craftsmanship
                 </h3>
               </div>
-              {/* END Heading */}
 
-              {/* Features */}
               <div className='space-y-5'>
                 {features.map((feature, index) => (
                   <div key={index} className='flex space-x-4'>
@@ -79,12 +75,10 @@ export default function Features() {
                   </div>
                 ))}
               </div>
-              {/* END Features */}
             </div>
           </div>
         </div>
       </div>
-      {/* END Features Section: Featured Image Side */}
     </>
   )
 }
