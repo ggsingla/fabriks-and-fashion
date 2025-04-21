@@ -3,7 +3,12 @@ import { Inter, Playfair_Display } from 'next/font/google'
 import '../styles/globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans', weight: ['400', '500', '600', '700'] })
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' })
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-serif',
+  weight: ['400', '500', '600', '700', '800', '900'],
+  style: ['normal', 'italic']
+})
 
 export const metadata: Metadata = {
   title: 'Fabriks & Fashion | Luxury Bespoke Fashion House',
@@ -15,6 +20,12 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
   },
+  icons: {
+    icon: [
+      { url: '/company/hanger-black.svg', media: '(prefers-color-scheme: light)' },
+      { url: '/company/hanger-white.svg', media: '(prefers-color-scheme: dark)' },
+    ],
+  },
 }
 
 export default function RootLayout({
@@ -24,6 +35,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              function updateFavicon() {
+                const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const link = document.querySelector("link[rel*='icon']");
+                if (link) {
+                  link.href = isDark ? '/company/hanger-white.svg' : '/company/hanger-black.svg';
+                }
+              }
+              updateFavicon();
+              window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon);
+            `,
+          }}
+        />
+      </head>
       <body>
         {children}
       </body>
