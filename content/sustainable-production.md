@@ -1,6 +1,6 @@
 ---
 title: 'Sustainable Production'
-image: '/services/fabric-printing.jpg'
+image: '/services/sustainable-production.jpeg'
 image_alt: 'Eco-friendly fabric printing process using sustainable dyes and materials'
 description: 'We are committed to ethical and sustainable fashion practices, from sourcing eco-friendly materials to implementing responsible production methods.'
 ---

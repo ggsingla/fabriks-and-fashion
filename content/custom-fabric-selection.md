@@ -1,6 +1,6 @@
 ---
 title: 'Custom Fabric Selection'
-image: '/services/fabric-dyeing.jpg'
+image: '/services/fabric-selection.jpeg'
 image_alt: 'Luxurious fabrics displayed in our showroom, showcasing various textures and colors'
 description: 'Choose from our curated collection of premium, ethically sourced fabrics, including luxurious silks, fine wools, and sustainable materials, all carefully selected for quality and style.'
 ---

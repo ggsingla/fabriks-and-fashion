@@ -1,6 +1,6 @@
 ---
 title: 'Handcrafted Embellishments'
-image: '/services/embriodary.jpg'
+image: '/services/embroidery.jpeg'
 image_alt: 'Skilled artisan carefully hand-embroidering intricate details on a luxury garment'
 description: 'Experience the artistry of our skilled craftsmen who create exquisite hand-embroidered details, beading, and custom embellishments that add unique character to your garments.'
 ---

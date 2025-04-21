@@ -1,6 +1,6 @@
 ---
 title: 'Bespoke Pattern Design'
-image: '/services/pattern-making.jpg'
+image: '/services/pattern-design.jpeg'
 image_alt: 'Expert pattern maker carefully measuring and marking fabric for a custom garment pattern'
 description: 'Our expert pattern makers create custom patterns tailored to your unique measurements and style preferences, ensuring a perfect fit and personalized design.'
 ---

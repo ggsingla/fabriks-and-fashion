@@ -1,6 +1,6 @@
 ---
 title: 'Finishing & Packaging'
-image: '/services/packaging.jpg'
+image: '/services/packaging.jpeg'
 image_alt: 'Luxury garment being carefully packaged in premium materials with attention to detail'
 description: 'Our meticulous finishing process ensures each garment is perfectly pressed, steamed, and packaged with the utmost care, ready for its new owner.'
 ---

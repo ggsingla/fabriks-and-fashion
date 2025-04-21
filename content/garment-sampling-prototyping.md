@@ -1,6 +1,6 @@
 ---
 title: 'Garment Sampling & Prototyping'
-image: '/services/garmet-sampling.jpg'
+image: '/services/prototyping.jpeg'
 image_alt: 'Designer reviewing a prototype garment with attention to fit and construction details'
 description: 'Experience our comprehensive sampling service that transforms your designs into perfect prototypes, ensuring every detail meets your exact specifications.'
 ---
