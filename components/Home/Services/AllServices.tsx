@@ -23,10 +23,10 @@ export default function Services({ showAll }: { showAll: boolean }) {
     <>
       <div className='space-y-16 container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-24'>
         <div className='font-serif mb-10'>
-          <h2 className='text-3xl text-black font-medium md:text-4xl mb-4'>
+          <h2 className='text-3xl  font-medium md:text-4xl mb-4'>
             We offer a wide range of services
           </h2>
-          <h3 className='text-lg md:leading-relaxed lg:w-1/2 text-gray-600'>
+          <h3 className='text-lg md:leading-relaxed lg:w-1/2 text-muted-foreground font-light font-sans'>
             We offer a wide range of services to help you achieve your goals.
           </h3>
         </div>
@@ -68,11 +68,11 @@ export default function Services({ showAll }: { showAll: boolean }) {
                   <h4 className='font-serif font-semibold text-lg sm:text-xl mt-4 mb-2'>
                     <Link
                       href={`/services/${service.slug}`}
-                      className='leading-7 text-black hover:text-black line-clamp-1 capitalize'>
+                      className='leading-7 text-foreground hover:text-black line-clamp-1 capitalize'>
                       {service.title}
                     </Link>
                   </h4>
-                  <p className='prose prose-indigo text-gray-500/90 line-clamp-5'>
+                  <p className='text-muted-foreground font-light font-sans line-clamp-5'>
                     {service.description}
                   </p>
                 </div>

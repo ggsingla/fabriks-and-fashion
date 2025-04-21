@@ -2,14 +2,14 @@ const testimonials = [
   {
     id: 1,
     quote:
-      'I&apos;ve had the pleasure of partnering with the textile manufacturing company for our clothing production needs. Their end-to-end experience is unmatched, and their full-service manufacturing factory ensures a seamless production process. I highly recommend their services.',
+      "I've had the pleasure of partnering with the textile manufacturing company for our clothing production needs. Their end-to-end experience is unmatched, and their full-service manufacturing factory ensures a seamless production process. I highly recommend their services.",
     name: 'Amita Patel',
     position: 'Fashion Designer',
   },
   {
     id: 2,
     quote:
-      'As a boutique clothing brand owner, I&apos;ve had the privilege of working with the textile manufacturing company. Their expertise in providing an end-to-end clothing production experience is impressive. Their full-service manufacturing factory has helped me bring my designs to life efficiently. I highly endorse their services.',
+      "As a boutique clothing brand owner, I've had the privilege of working with the textile manufacturing company. Their expertise in providing an end-to-end clothing production experience is impressive. Their full-service manufacturing factory has helped me bring my designs to life efficiently. I highly endorse their services.",
     name: 'Rajesh Sharma',
     position: 'Fashion Brand Owner',
   },
@@ -23,7 +23,7 @@ const testimonials = [
   {
     id: 4,
     quote:
-      'I&apos;ve collaborated with the textile manufacturing company for several seasons, and their commitment to delivering a seamless end-to-end clothing production experience is commendable. Their full-service manufacturing factory ensures top-notch quality and timely production. I highly vouch for their services.',
+      "I've collaborated with the textile manufacturing company for several seasons, and their commitment to delivering a seamless end-to-end clothing production experience is commendable. Their full-service manufacturing factory ensures top-notch quality and timely production. I highly vouch for their services.",
     name: 'Vikram Singh',
     position: 'Fashion Retailer',
   },
@@ -36,18 +36,18 @@ export default function ServiceTestimonials() {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16'>
           {testimonials.map((testimonial) => (
             <blockquote key={testimonial.id}>
-              <p className='relative bg-beige-100 font-medium leading-7 text-gray-700 pl-6 pr-10 py-6 md:p-10 mb-5'>
+              <p className='relative bg-muted font-medium leading-7 text-foreground pl-6 pr-10 py-6 md:p-10 mb-5'>
                 <span className='absolute inline-block top-0 right-0 text-6xl mt-2 mr-4 text-orange-200 font-serif'>
                   “
                 </span>{' '}
-                <span className='absolute inline-block bottom-0 left-6 translate-y-1/2 rotate-45 w-4 h-4 bg-beige-100' />
+                <span className='absolute inline-block bottom-0 left-6 translate-y-1/2 rotate-45 w-4 h-4 bg-muted' />
                 <span className='relative'>{testimonial.quote}</span>
               </p>
               <div className=' ml-2'>
-                <p className='font-serif text-black font-semibold'>
+                <p className='font-serif text-foreground font-semibold'>
                   {testimonial.name}
                 </p>
-                <p className='text-gray-500 font-medium text-sm'>
+                <p className='text-muted-foreground font-medium text-sm'>
                   {testimonial.position}
                 </p>
               </div>

@@ -25,11 +25,11 @@ const Hero = () => {
           className='hidden lg:block absolute -bottom-0 w-1/4 object-cover object-top right-32 h-96'
         />
         <div className='font-serif grid'>
-          <h1 className='text-2xl lg:text-4xl max-w-xl mt-5 leading-normal text-black font-medium'>
+          <h1 className='text-2xl lg:text-4xl max-w-xl mt-5 leading-normal font-medium'>
             Where Personal Style Meets Timeless Design
           </h1>
           <Link
-            className='text-lg lg:text-2xl mt-5 text-black underline decoration-1 underline-offset-8 hover:decoration-2 flex items-center gap-2'
+            className='text-lg lg:text-xl mt-5 text-muted-foreground underline decoration-1 underline-offset-8 hover:decoration-2 flex items-center gap-2 font-sans font-light'
             href='/contact'>
             Begin Your Journey <ArrowRightIcon className='w-4 h-4' />
           </Link>

@@ -30,7 +30,7 @@ export default function ServicePage({ data }: { data: data }) {
             />
           </div>
           <article
-            className='prose md:prose-lg prose-orange mx-auto mt-8 font-serif'
+            className='prose md:prose-lg prose-orange mx-auto mt-8 prose-headings:font-serif prose-headings:font-medium prose-headings:text-foreground prose-p:font-light prose-p:text-muted-foreground prose-li:font-light prose-li:text-muted-foreground'
             dangerouslySetInnerHTML={{ __html: content }}
           />
         </article>
