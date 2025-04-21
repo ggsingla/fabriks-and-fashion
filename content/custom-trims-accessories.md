@@ -1,6 +1,6 @@
 ---
 title: 'Custom Trims & Accessories'
-image: '/services/sourcing-or-development-of-trims.jpg'
+image: '/services/custom-trims.jpeg'
 image_alt: 'Artisan handcrafting unique trims and accessories for luxury garments'
 description: 'Create unique trims and accessories that perfectly complement your designs, from custom buttons and zippers to specialized closures and decorative elements.'
 ---

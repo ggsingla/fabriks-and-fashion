@@ -1,6 +1,6 @@
 ---
 title: 'Bespoke Tailoring'
-image: '/services/bespoke-stichting.jpg'
+image: '/services/tailoring.jpeg'
 image_alt: 'Master tailor meticulously hand-stitching a luxury garment with precision and care'
 description: 'Our master tailors bring your designs to life with meticulous attention to detail, ensuring each garment is crafted to perfection with superior construction techniques.'
 ---

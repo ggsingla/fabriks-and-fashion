@@ -1,6 +1,6 @@
 ---
 title: 'Quality Assurance'
-image: '/services/quality-control.jpg'
+image: '/services/quality-control.jpeg'
 image_alt: 'Quality control expert meticulously inspecting a luxury garment under professional lighting'
 description: 'Every garment undergoes rigorous quality checks at multiple stages of production, ensuring the highest standards of craftsmanship and attention to detail.'
 ---

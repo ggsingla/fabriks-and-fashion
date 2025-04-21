@@ -9,16 +9,16 @@ const Hero = () => {
       <div className='pb-8 container xl:max-w-7xl mx-auto px-4 lg:px-10 relative my-5 lg:my-10'>
         <div
           role='img'
-          className='relative h-96 lg:h-[600px] w-full overflow-hidden'>
+          className='relative h-96 lg:h-[550px] w-full overflow-hidden'>
           <Image
             fill
             src='/hero/hero-main.jpeg'
             alt='Fabriks & Fashion - Bespoke Fashion Design'
-            className='object-cover lg:object-center object-left'
+            className='object-cover object-top'
           />
         </div>
         <Image
-          src='/hero/hero-main.jpeg'
+          src='/hero/hero-sub.jpeg'
           alt='Fabriks & Fashion - Bespoke Fashion Design'
           height={500}
           width={300}

@@ -21,7 +21,7 @@ export default function ServicePage({ data }: { data: data }) {
         </div>
 
         <article className='max-w-5xl mx-auto'>
-          <div role='img' className='relative h-96 w-full'>
+          <div role='img' className='relative h-[300px] md:h-[400px] lg:h-[500px] w-full'>
             <Image
               src={data?.image}
               fill

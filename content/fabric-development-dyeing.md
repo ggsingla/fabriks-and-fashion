@@ -1,6 +1,6 @@
 ---
 title: 'Fabric Development & Dyeing'
-image: '/services/fabric-dyeing.jpg'
+image: '/services/fabric-dyeing.jpeg'
 image_alt: 'Artisan carefully hand-dyeing fabric using traditional techniques and sustainable dyes'
 description: 'Our in-house fabric development team creates custom textiles and unique dyeing techniques to bring your vision to life with exclusive, one-of-a-kind materials.'
 ---
