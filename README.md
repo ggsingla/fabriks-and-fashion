@@ -1,38 +1,88 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Fabriks & Fashion
 
-## Getting Started
+A luxury fashion house website specializing in bespoke designs, sustainable fashion, and exceptional craftsmanship. Built with modern web technologies and a focus on performance, accessibility, and maintainability.
 
-First, run the development server:
+🌐 **Live Site**: [https://fabriks-and-fashion.vercel.app](https://fabriks-and-fashion.vercel.app)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## 🚀 Technologies Used
+
+- **Framework**: [Next.js](https://nextjs.org/) (React-based framework)
+- **Language**: TypeScript
+- **Styling**:
+  - [Tailwind CSS](https://tailwindcss.com/)
+  - Tailwind Typography
+  - Tailwind Forms
+  - Tailwind Aspect Ratio
+- **Content Management**:
+  - Markdown-based content system
+  - Gray Matter for frontmatter parsing
+  - Remark for Markdown processing
+- **Icons**: [Heroicons](https://heroicons.com/)
+- **Development Tools**:
+  - ESLint
+  - TypeScript
+  - PostCSS
+  - Autoprefixer
+
+## 📚 Content Management
+
+The project uses a Markdown-based content management system for easy content updates and maintenance:
+
+- Content is stored in the `/content` directory as `.md` files
+- Each service/feature has its own Markdown file with frontmatter metadata
+- Content is processed using `gray-matter` and `remark` for HTML conversion
+- The system allows for easy content updates without code changes
+
+## 🎨 Design System
+
+The project maintains a consistent and modern design system:
+
+- **Typography**: Carefully selected font combinations for optimal readability
+- **Color Scheme**: Elegant and sophisticated color palette
+- **Layout**: Responsive design with consistent spacing and grid system
+- **Components**: Reusable UI components with consistent styling
+- **Animations**: Subtle and purposeful animations for enhanced user experience
+
+## 🛠️ Project Structure
+
+```
+├── app/              # Next.js app directory
+├── components/       # Reusable React components
+├── content/         # Markdown content files
+├── lib/            # Utility functions and helpers
+├── public/         # Static assets
+└── styles/         # Global styles and Tailwind configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   yarn install
+   # or
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   yarn dev
+   # or
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 📦 Build and Deployment
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+To build the project for production:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+yarn build
+# or
+npm run build
+```
 
-## Learn More
+The project can be deployed on any platform that supports Next.js applications, with Vercel being the recommended platform.
 
-To learn more about Next.js, take a look at the following resources:
+## 📝 License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License - see the LICENSE file for details.
