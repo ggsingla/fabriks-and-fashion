@@ -8,7 +8,7 @@ interface Props {
 
 const MasterLayout = ({ children }: Props) => {
   return (
-    <main className='bg-beige-50'>
+    <main className='bg-background text-foreground'>
       <LogoBar />
       <NavBar />
       {children}

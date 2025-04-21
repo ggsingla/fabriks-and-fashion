@@ -29,7 +29,7 @@ export default function Team() {
       <div className='space-y-8 container xl:max-w-7xl mx-auto px-4 py-10 md:py-16 lg:px-8'>
 
         <div className=' mb-10 text-center mx-auto'>
-          <h2 className='font-serif text-3xl text-black md:text-4xl font-semibold mb-4'>
+          <h2 className='font-serif text-3xl  md:text-4xl font-semibold mb-4'>
             Meet Our <span className='font-light'>Creative Team</span>
           </h2>
           <h3 className='text-lg font-light md:leading-relaxed'>
