@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 const plugin = require('tailwindcss/plugin')
-const defaultTheme = require('tailwindcss/defaultTheme')
+// const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -9,8 +9,6 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
-
-    // Or if using `src` directory:
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
@@ -51,6 +49,12 @@ module.exports = {
         beige: {
           50: '#FDFCF6',
           100: '#FAF6E5',
+        },
+        background: '#FDFCF6',
+        foreground: '#1c1917',
+        muted: {
+          DEFAULT: '#FAF6E5',
+          foreground: '#57534e',
         },
       },
     },
