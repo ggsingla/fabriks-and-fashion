@@ -14,27 +14,32 @@ export type Service = {
 }
 
 export async function getAllServices(): Promise<Service[]> {
-  const contentDirectory = path.join(process.cwd(), 'content')
-  const files = fs.readdirSync(contentDirectory)
+  try {
+    const contentDirectory = path.join(process.cwd(), 'content')
+    const files = fs.readdirSync(contentDirectory)
 
-  const services = files
-    .filter((file) => file.endsWith('.md'))
-    .map((file) => {
-      const filePath = path.join(contentDirectory, file)
-      const fileContents = fs.readFileSync(filePath, 'utf8')
-      const { data, content } = matter(fileContents)
+    const services = files
+      .filter((file) => file.endsWith('.md'))
+      .map((file) => {
+        const filePath = path.join(contentDirectory, file)
+        const fileContents = fs.readFileSync(filePath, 'utf8')
+        const { data, content } = matter(fileContents)
 
-      return {
-        title: data.title,
-        slug: file.replace('.md', ''),
-        description: data.description,
-        image: data.image,
-        image_alt: data.image_alt,
-        content,
-      }
-    })
+        return {
+          title: data.title,
+          slug: file.replace('.md', ''),
+          description: data.description,
+          image: data.image,
+          image_alt: data.image_alt,
+          content,
+        }
+      })
 
-  return services
+    return services
+  } catch (error) {
+    console.error('Error reading services:', error)
+    return []
+  }
 }
 
 export async function getServiceBySlug(slug: string): Promise<Service | null> {
