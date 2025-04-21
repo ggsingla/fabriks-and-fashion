@@ -64,7 +64,7 @@ const AboutUs = () => {
           <Image
             height={600}
             width={400}
-            src='/hero/hero-aside.jpeg'
+            src='/hero/hero-sub.jpeg'
             alt='Fabriks & Fashion - Luxury Craftsmanship'
             className='hidden md:block col-span-1 object-cover object-center h-96 w-full'
           />
