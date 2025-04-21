@@ -1,7 +1,8 @@
 {
-  "name": "moh-india-website",
+  "name": "fabriks-and-fashion",
   "version": "0.1.0",
   "private": true,
+  "description": "Luxury fashion house specializing in bespoke designs, sustainable fashion, and exceptional craftsmanship",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

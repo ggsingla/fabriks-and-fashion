@@ -6,8 +6,15 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-sans', weight: ['400
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif' })
 
 export const metadata: Metadata = {
-  title: 'Tailor and Company - Exceptional Tailoring for Your Unique Style',
-  description: 'At tailorandcompany.com, our philosophy is simple: exceptional tailoring for your unique style. We use the finest fabrics, skilled craftsmanship, and innovative techniques to create high-quality garments. With personalized attention to detail, we ensure your satisfaction every step of the way. Your journey, our honor.',
+  title: 'Fabriks & Fashion | Luxury Bespoke Fashion House',
+  description: 'Discover Fabriks & Fashion, a distinguished luxury fashion house where personal style meets exceptional craftsmanship. Specializing in bespoke designs, sustainable fashion, and timeless pieces that celebrate individuality through ethical design and masterful tailoring.',
+  keywords: 'luxury fashion, bespoke design, sustainable fashion, ethical fashion, custom tailoring, high-end fashion, couture, luxury fabrics, fashion house',
+  openGraph: {
+    title: 'Fabriks & Fashion | Luxury Bespoke Fashion House',
+    description: 'Discover Fabriks & Fashion, a distinguished luxury fashion house where personal style meets exceptional craftsmanship.',
+    type: 'website',
+    locale: 'en_US',
+  },
 }
 
 export default function RootLayout({
