@@ -12,7 +12,7 @@ export default function Footer() {
               <Link href='/privacy-policy'>Privacy Policy</Link>
             </nav>
           </div>
-          <hr className='my-10 border-muted-foreground' />
+          <hr className='my-10 border-muted-foreground/25 h-px' />
           <div className=''>
             © <span className='font-serif'>Fabriks & Fashion 2023-2024</span>
           </div>
