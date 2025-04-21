@@ -23,7 +23,7 @@ export default function Gallery() {
 
           <div className='font-sans grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8'>
             {images.map((index) => (
-              <div key={index} className={`${!showAll && index > 2 ? 'hidden sm:block' : ''}`}>
+              <div key={index} className={`${!showAll && index > 2 ? 'hidden md:block' : ''}`}>
                 <div className='max-h-96 group relative overflow-hidden mb-2'>
                   <Image
                     src={`/product/stock_images/fashion (${index}).jpg`}
@@ -38,7 +38,7 @@ export default function Gallery() {
             ))}
           </div>
 
-          <div className='sm:hidden mt-8 text-center'>
+          <div className='md:hidden mt-8 text-center'>
             <button
               onClick={() => setShowAll(!showAll)}
               className='text-orange-700 hover:text-orange-600 font-medium text-lg'>
