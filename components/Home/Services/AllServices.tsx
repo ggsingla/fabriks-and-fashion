@@ -6,8 +6,14 @@ import { getAllServices } from '@/lib/markdown'
 import Image from 'next/image'
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline'
 
-export default function Services({ showAll }: { showAll: boolean }) {
+type ServicesProps = {
+  showAll: boolean
+  showToggle?: boolean
+}
+
+export default function Services({ showAll, showToggle = true }: ServicesProps) {
   const [complete, setComplete] = useState<boolean>(showAll)
+  const displayAll = !showToggle || complete
   const [services, setServices] = useState<Service[]>([])
 
   useEffect(() => {
@@ -32,7 +38,7 @@ export default function Services({ showAll }: { showAll: boolean }) {
         </div>
         <div className='flex flex-col md:grid md:grid-cols-2 gap-y-6 md:gap-12'>
           {services
-            .slice(0, complete ? services.length : 4)
+            .slice(0, displayAll ? services.length : 4)
             .map((service) => {
               return (
                 <div key={service.slug} className='flex flex-col'>
@@ -78,21 +84,23 @@ export default function Services({ showAll }: { showAll: boolean }) {
                 </div>
               )
             })}
-          <button
-            onClick={() => setComplete(!complete)}
-            className='col-span-2 text-orange-700 hover:text-orange-600 font-medium text-lg'>
-            {complete ? (
-              <>
-                Show less
-                <ChevronUpIcon className='ml-2 w-5 h-5 inline-block' />
-              </>
-            ) : (
-              <>
-                Show more
-                <ChevronDownIcon className='ml-2 w-5 h-5 inline-block' />
-              </>
-            )}
-          </button>
+          {showToggle && (
+            <button
+              onClick={() => setComplete(!complete)}
+              className='col-span-2 text-orange-700 hover:text-orange-600 font-medium text-lg'>
+              {complete ? (
+                <>
+                  Show less
+                  <ChevronUpIcon className='ml-2 w-5 h-5 inline-block' />
+                </>
+              ) : (
+                <>
+                  Show more
+                  <ChevronDownIcon className='ml-2 w-5 h-5 inline-block' />
+                </>
+              )}
+            </button>
+          )}
         </div>
       </div>
     </>

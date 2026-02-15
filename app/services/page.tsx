@@ -8,7 +8,7 @@ export const metadata = {
 export default function ServicesPage() {
   return (
     <MasterLayout>
-      <Services showAll={true} />
+      <Services showAll={true} showToggle={false} />
     </MasterLayout>
   )
 } 
