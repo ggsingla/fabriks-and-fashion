@@ -20,7 +20,7 @@ export default function CTA() {
             <div className='grow md:p-5 md:text-center'>
               <Link
                 href='/contact'
-                className='group inline-flex items-center text-lg lg:text-2xl font-serif mt-5 font-medium  underline decoration-1 underline-offset-8 hover:decoration-2 transition-all duration-300'>
+                className='group inline-flex items-center text-lg lg:text-2xl font-serif mt-5 font-medium  underline decoration-1 underline-offset-8 hover:decoration-2 hover:text-accent hover:underline decoration-accent/50 transition-all duration-300'>
                 Begin Your Journey
                 <ArrowRightIcon className='ml-2 transition-transform duration-300 group-hover:translate-x-1' size={20} />
               </Link>

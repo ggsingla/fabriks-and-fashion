@@ -22,16 +22,17 @@ const Hero = () => {
           alt='Fabriks & Fashion - Bespoke Fashion Design'
           height={500}
           width={300}
-          className='hidden lg:block absolute -bottom-0 w-1/4 object-cover object-top right-32 h-96'
+          className='hidden lg:block absolute bottom-0 w-1/4 object-cover object-top right-32 h-96'
         />
-        <div className='font-serif grid'>
-          <h1 className='text-2xl lg:text-4xl max-w-xl mt-5 leading-normal font-medium'>
+        <div className='font-serif grid mt-6 border-l-2 border-accent/40 pl-5'>
+          <h1 className='text-2xl lg:text-4xl max-w-xl leading-tight font-medium text-foreground'>
             Where Personal Style Meets Timeless Design
           </h1>
           <Link
-            className='text-lg lg:text-xl mt-5 text-muted-foreground underline decoration-1 underline-offset-8 hover:decoration-2 flex items-center gap-2 font-sans font-light'
+            className='group inline-flex items-center text-base lg:text-lg mt-5 text-foreground hover:text-accent font-medium underline decoration-accent/50 decoration-1 underline-offset-8 hover:decoration-accent hover:decoration-2 transition-all duration-300'
             href='/contact'>
-            Begin Your Journey <ArrowRightIcon size={16} />
+            Begin Your Journey
+            <ArrowRightIcon className='ml-2 transition-transform duration-300 group-hover:translate-x-1' size={20} />
           </Link>
         </div>
       </div>
