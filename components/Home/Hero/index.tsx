@@ -24,7 +24,7 @@ const Hero = () => {
           width={300}
           className='hidden lg:block absolute bottom-0 w-1/4 object-cover object-top right-32 h-96'
         />
-        <div className='font-serif grid mt-6 border-l-2 border-accent/40 pl-5'>
+        <div className='font-serif grid mt-6'>
           <h1 className='text-2xl lg:text-4xl max-w-xl leading-tight font-medium text-foreground'>
             Where Personal Style Meets Timeless Design
           </h1>

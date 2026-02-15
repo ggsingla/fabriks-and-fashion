@@ -41,13 +41,13 @@ export default function ServiceTestimonials() {
                   “
                 </span>{' '}
                 <span className='absolute inline-block bottom-0 left-6 translate-y-1/2 rotate-45 w-4 h-4 bg-muted' />
-                <span className='relative'>{testimonial.quote}</span>
+                <span className='relative font-normal'>{testimonial.quote}</span>
               </p>
               <div className=' ml-2'>
                 <p className='font-serif text-foreground font-semibold'>
                   {testimonial.name}
                 </p>
-                <p className='text-muted-foreground font-medium text-sm'>
+                <p className='text-muted-foreground text-sm'>
                   {testimonial.position}
                 </p>
               </div>
