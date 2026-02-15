@@ -1,19 +1,26 @@
 export default function AboutUs() {
   return (
-    <>
-      <>
-        <div className='flex flex-col items-center justify-center text-center container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-20'>
-          <div className='font-serif mb-10'>
-            <h2 className='text-3xl  font-medium md:text-4xl mb-4'>
-              About <br /> Fabriks & Fashion
-            </h2>
-          </div>
-
-          <p className='max-w-5xl text-base md:text-xl font-light text-muted-foreground'>
-            Fabriks & Fashion represents the pinnacle of personalized fashion design, where each creation tells a unique story. As a distinguished fashion house, we specialize in creating unique, ethically crafted pieces that celebrate individuality. Our approach combines traditional artistry with contemporary design, resulting in timeless pieces that speak to the discerning client. Each creation is a testament to our dedication to quality, sustainability, and the art of personal expression through fashion.
-          </p>
-        </div>
-      </>
-    </>
+    <section
+      id='about'
+      aria-labelledby='about-heading'
+      className='container xl:max-w-7xl mx-auto px-4 py-20 lg:px-8 lg:py-28'>
+      <div className='flex flex-col items-center text-center max-w-3xl mx-auto'>
+        <p
+          id='about-heading'
+          className='font-sans text-xs uppercase tracking-[0.2em] text-muted-foreground font-medium mb-4'>
+          About the house
+        </p>
+        <h2 className='font-serif text-3xl font-medium tracking-tight text-foreground md:text-4xl'>
+          Fabriks & Fashion
+        </h2>
+        <div
+          className='w-12 h-px bg-stone-300/80 my-5'
+          aria-hidden
+        />
+        <p className='font-sans text-[15px] md:text-base leading-relaxed font-light text-muted-foreground'>
+          Fabriks & Fashion represents the pinnacle of personalized fashion design, where each creation tells a unique story. As a distinguished fashion house, we specialize in ethically crafted pieces that celebrate individuality combining traditional artistry with contemporary design for timeless results.
+        </p>
+      </div>
+    </section>
   )
 }

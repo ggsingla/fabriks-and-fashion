@@ -14,7 +14,12 @@ export default function Footer() {
           </div>
           <hr className='my-10 border-muted-foreground/25 h-px' />
           <div className=''>
-            © <span className='font-serif'>Fabriks & Fashion 2023-2024</span>
+            © <span className='font-serif'>Fabriks & Fashion
+              <span className='font-sans text-xs text-muted-foreground ml-1.5'>
+                {new Date().getFullYear()}
+              </span>
+
+            </span>
           </div>
         </div>
       </footer>
