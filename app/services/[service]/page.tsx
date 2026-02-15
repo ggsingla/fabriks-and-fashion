@@ -5,15 +5,25 @@ import { getServiceBySlug } from '@/lib/markdown'
 import MasterLayout from '@/components/MasterLayout'
 import { capitalizeWords } from '@/lib/utils'
 
-export async function generateMetadata({ params }: { params: { service: string } }) {
-  const service = params.service.replace(/-/g, ' ')
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ service: string }>
+}) {
+  const { service: serviceSlug } = await params
+  const service = serviceSlug.replace(/-/g, ' ')
   return {
     title: `${capitalizeWords(service)} | Tailor and Company`
   }
 }
 
-export default async function SingleServicePage({ params }: { params: { service: string } }) {
-  const serviceData = await getServiceBySlug(params.service)
+export default async function SingleServicePage({
+  params
+}: {
+  params: Promise<{ service: string }>
+}) {
+  const { service: serviceSlug } = await params
+  const serviceData = await getServiceBySlug(serviceSlug)
   if (!serviceData) {
     return (
       <MasterLayout>
