@@ -13,10 +13,8 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    outputFileTracingIncludes: {
-      '/*': ['./content/**/*'],
-    },
+  outputFileTracingIncludes: {
+    '/*': ['./content/**/*'],
   },
 }
 
