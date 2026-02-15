@@ -17,7 +17,7 @@ A luxury fashion house website specializing in bespoke designs, sustainable fash
   - Markdown-based content system
   - Gray Matter for frontmatter parsing
   - Remark for Markdown processing
-- **Icons**: [Heroicons](https://heroicons.com/)
+- **Icons**: [Phosphor Icons](https://phosphoricons.com/) (`@phosphor-icons/react`)
 - **Development Tools**:
   - ESLint
   - TypeScript

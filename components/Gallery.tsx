@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { useState } from 'react'
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline'
+import { CaretDownIcon, CaretUpIcon } from '@phosphor-icons/react'
 
 export default function Gallery() {
   const [showAll, setShowAll] = useState(false)
@@ -45,12 +45,12 @@ export default function Gallery() {
               {showAll ? (
                 <>
                   Show less
-                  <ChevronUpIcon className='ml-2 w-5 h-5 inline-block' />
+                  <CaretUpIcon className='ml-2 w-5 h-5 inline-block' />
                 </>
               ) : (
                 <>
                   Show more
-                  <ChevronDownIcon className='ml-2 w-5 h-5 inline-block' />
+                  <CaretDownIcon className='ml-2 w-5 h-5 inline-block' />
                 </>
               )}
             </button>

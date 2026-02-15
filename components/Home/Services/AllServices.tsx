@@ -4,7 +4,7 @@ import { Service } from '../../common/NavBar'
 import { useEffect, useState } from 'react'
 import { getAllServices } from '@/lib/markdown'
 import Image from 'next/image'
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline'
+import { CaretDownIcon, CaretUpIcon, ArrowRightIcon } from '@phosphor-icons/react'
 
 type ServicesProps = {
   showAll: boolean
@@ -46,17 +46,11 @@ export default function Services({ showAll, showToggle = true }: ServicesProps) 
                     href={`/services/${service.slug}`}
                     className='flex justify-center items-center bg-orange-200 relative group overflow-hidden h-80'>
                     <div className='z-10 flex items-center justify-center absolute inset-0 bg-orange-700 bg-opacity-75 opacity-0 transition ease-out duration-150 group-hover:opacity-100'>
-                      <svg
-                        fill='currentColor'
-                        viewBox='0 0 20 20'
-                        xmlns='http://www.w3.org/2000/svg'
-                        className='text-white transform -rotate-45 hi-solid hi-arrow-right inline-block w-10 h-10'>
-                        <path
-                          fillRule='evenodd'
-                          d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z'
-                          clipRule='evenodd'
-                        />
-                      </svg>
+                      <ArrowRightIcon
+                        className='text-white -rotate-45 inline-block'
+                        size={40}
+                        weight='bold'
+                      />
                     </div>
 
                     <div role='img' className='relative h-full w-full'>
@@ -91,12 +85,12 @@ export default function Services({ showAll, showToggle = true }: ServicesProps) 
               {complete ? (
                 <>
                   Show less
-                  <ChevronUpIcon className='ml-2 w-5 h-5 inline-block' />
+                  <CaretUpIcon className='ml-2 w-5 h-5 inline-block' />
                 </>
               ) : (
                 <>
                   Show more
-                  <ChevronDownIcon className='ml-2 w-5 h-5 inline-block' />
+                  <CaretDownIcon className='ml-2 w-5 h-5 inline-block' />
                 </>
               )}
             </button>
