@@ -1,5 +1,5 @@
 'use client'
-import { ArrowRightIcon } from '@heroicons/react/24/outline'
+import { ArrowRightIcon } from '@phosphor-icons/react'
 import Link from 'next/link'
 
 export default function ThankYouPage() {
@@ -26,7 +26,7 @@ export default function ThankYouPage() {
               className='font-serif inline-flex justify-center items-center space-x-2 font-semibold rounded-none px-6 py-3 leading-6 ring-1 ring-black ring-opacity-40 hover:ring-opacity-100 border-none text-foreground text-lg transition-all'
             >
               <span>Back to Home</span>
-              <ArrowRightIcon className='w-5 h-5' />
+              <ArrowRightIcon size={20} />
             </Link>
           </div>
         </div>

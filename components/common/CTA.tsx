@@ -1,5 +1,6 @@
+'use client'
 import Link from 'next/link'
-import { ArrowRightIcon } from '@heroicons/react/24/outline'
+import { ArrowRightIcon } from '@phosphor-icons/react'
 
 export default function CTA() {
   return (
@@ -21,7 +22,7 @@ export default function CTA() {
                 href='/contact'
                 className='group inline-flex items-center text-lg lg:text-2xl font-serif mt-5 font-medium  underline decoration-1 underline-offset-8 hover:decoration-2 transition-all duration-300'>
                 Begin Your Journey
-                <ArrowRightIcon className='ml-2 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1' />
+                <ArrowRightIcon className='ml-2 transition-transform duration-300 group-hover:translate-x-1' size={20} />
               </Link>
             </div>
           </div>

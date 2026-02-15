@@ -1,7 +1,7 @@
-import { ArrowRightIcon } from '@heroicons/react/24/outline'
+'use client'
+import { ArrowRightIcon } from '@phosphor-icons/react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
 const Hero = () => {
   return (
@@ -31,7 +31,7 @@ const Hero = () => {
           <Link
             className='text-lg lg:text-xl mt-5 text-muted-foreground underline decoration-1 underline-offset-8 hover:decoration-2 flex items-center gap-2 font-sans font-light'
             href='/contact'>
-            Begin Your Journey <ArrowRightIcon className='w-4 h-4' />
+            Begin Your Journey <ArrowRightIcon size={16} />
           </Link>
         </div>
       </div>

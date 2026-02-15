@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { getAllServices } from '@/lib/markdown'
-import { ChevronDownIcon, Bars3Icon } from '@heroicons/react/24/outline'
+import { CaretDownIcon, ListIcon } from '@phosphor-icons/react'
 
 export type Service = {
   title: string
@@ -36,7 +36,7 @@ const NavBar = () => {
           <div
             onClick={() => setMobileNavOpen(!mobileNavOpen)}
             className='text-center flex gap-5 justify-center items-center w-full py-2 lg:hidden'>
-            <Bars3Icon className='w-5 h-5' />
+            <ListIcon className='w-5 h-5' size={20} />
             <p>Menu</p>
           </div>
           <div className='relative container xl:max-w-7xl mx-auto px-4 lg:px-10'>
@@ -69,7 +69,7 @@ const NavBar = () => {
                   {/* Services Link */}
                   <div className='font-semibold inline-flex items-center space-x-1 h-8 px-4 group-hover:underline underline-offset-4'>
                     <span>Services</span>
-                    <ChevronDownIcon className='text-muted-foreground transform transition duration-200 ease-out group-hover:rotate-180 w-4 h-4' />
+                    <CaretDownIcon className='text-muted-foreground transform transition duration-200 ease-out group-hover:rotate-180 w-4 h-4' size={16} />
                   </div>
 
                   <div className='absolute top-2 pt-8 invisible group-hover:visible z-10'>
